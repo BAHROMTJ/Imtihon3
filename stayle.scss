@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+@mixin aval {
+  @media (max-width: 1059px) {
+    @content;
+  }
+}
+@mixin duvum {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+.contener {
+  width: 100vw;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .nav {
+    display: flex;
+    width: 83%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    @include aval {
+      width: 98%;
+    }
+    img {
+      @include aval {
+        width: 190px;
+      }
+    }
+    .menu {
+      width: 48%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      @include aval {
+        width: 68%;
+      }
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        align-items: center;
+        @include duvum {
+          justify-content: end;
+        }
+        img 
+        {
+         
+margin-left: 30px;
+      width: 50px;
+      display: none;
+      @include duvum {
+       display: block;
+     
+      }
+        }
+        li
+        {
+          @include duvum {
+            display: none;
+          }
+        }
+
+        button {
+          padding: 11px 20px;
+          border-radius: 14px;
+          background: #1b1a1a;
+          color: rgb(255, 255, 255);
+          border: none;
+
+          &:hover {
+            background: #686464;
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+  }
+}
+
+.contener1 {
+  img {
+    margin-left: 26px;
+
+    @include aval {
+      width: 90%;
+      margin-left: 0px;
+    }
+    @include duvum {
+      margin-left: 0px;
+    }
+  }
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ece7e4;
+  position: relative;
+  @include aval {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .text {
+    height: 566px;
+    width: 600px;
+    position: relative;
+    left: 4%;
+    padding: 55px;
+    box-sizing: border-box;
+    @include aval {
+      width: 100%;
+      left: 0px;
+    }
+  h2
+  {
+    @include aval {
+      margin-bottom: 31px !important;
+    }
+
+
+  }
+    :nth-child(1) {
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-align: left;
+      color: #645c55;
+      margin-bottom: 20px;
+    }
+    :nth-child(2) {
+      font-family: Poppins;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 70px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000000;
+      margin-bottom: 22px;
+    }
+
+    :nth-child(3) {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #645c55;
+      margin-bottom: 22px;
+    }
+    a {
+      margin-top: 5px;
+      margin-left: 31px;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.4000000059604645px;
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}
