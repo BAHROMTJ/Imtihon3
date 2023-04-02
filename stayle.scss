@@ -60,19 +60,15 @@
         @include duvum {
           justify-content: end;
         }
-        img 
-        {
-         
-margin-left: 30px;
-      width: 50px;
-      display: none;
-      @include duvum {
-       display: block;
-     
-      }
+        img {
+          margin-left: 30px;
+          width: 50px;
+          display: none;
+          @include duvum {
+            display: block;
+          }
         }
-        li
-        {
+        li {
           @include duvum {
             display: none;
           }
@@ -130,14 +126,11 @@ margin-left: 30px;
       width: 100%;
       left: 0px;
     }
-  h2
-  {
-    @include aval {
-      margin-bottom: 31px !important;
+    h2 {
+      @include aval {
+        margin-bottom: 31px !important;
+      }
     }
-
-
-  }
     :nth-child(1) {
       font-family: Poppins;
       font-size: 14px;
@@ -179,6 +172,154 @@ margin-left: 30px;
       letter-spacing: 0.4000000059604645px;
       text-decoration: none;
       color: #000000;
+    }
+  }
+}
+
+.contener2 {
+  width: 100%;
+  height: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .item {
+    height: 582px;
+    width: 768px;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-family: Poppins;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 38px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    div {
+      width: 501px;
+
+      p {
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #403e3b;
+        margin-bottom: 10px;
+      }
+      .log {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        span {
+          padding-top: 23px;
+          padding-left: 35px;
+          :nth-child(2) {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            letter-spacing: 0em;
+            color: #645c55;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contener3 {
+  width: 100%;
+  height: 600px;
+  background-image: url(/img/IMAGE\(3\).svg);
+  background-size: cover;
+  position: relative;
+  div {
+    height: 600px;
+    width: 300px;
+    position: absolute;
+    right: 4%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    h3 {
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-align: left;
+      color: #403e3b;
+    }
+  }
+}
+
+.contener4 {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .div {
+    height: 381px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    .item {
+      height: 82px;
+      width: 600px;
+      :nth-child(1) {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #645c55;
+        margin-bottom: 6px;
+      }
+      :nth-child(2) {
+        font-family: Poppins;
+        font-size: 39px;
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+    .item2 {
+      height: 259px;
+      width: 1168px;
+      display: flex;
+      justify-content: space-between;
+      .tem {
+        height: 259px;
+        width: 378.65625px;
+        text-align: center;
+        h2 {
+          margin-top: 12px;
+          font-family: Poppins;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0em;
+        }
+        p {
+          padding: 0px 39px;
+          margin-top: 12px;
+          font-family: Poppins;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0em;
+          color: #645c55;
+        }
+      }
     }
   }
 }
