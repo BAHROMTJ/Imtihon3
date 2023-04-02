@@ -9,6 +9,13 @@
     @content;
   }
 }
+@mixin sevum {
+  @media (max-width: 950px) {
+    @content;
+  }
+}
+
+
 @mixin duvum {
   @media (max-width: 700px) {
     @content;
@@ -116,7 +123,6 @@
     justify-content: center;
   }
   .text {
-    height: 566px;
     width: 600px;
     position: relative;
     left: 4%;
@@ -182,8 +188,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include duvum {
+   width: auto;
+   height: auto;
+  }
   .item {
-    height: 582px;
+    padding: 0px 20px;
     width: 768px;
     display: flex;
     justify-content: space-between;
@@ -197,7 +208,10 @@
     }
     div {
       width: 501px;
-
+      @include duvum {
+       width: 100%;
+      }
+      
       p {
         font-family: Poppins;
         font-size: 16px;
@@ -258,13 +272,13 @@
 
 .contener4 {
   width: 100%;
-  height: 600px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   .div {
-    height: 381px;
-    width: 1200px;
+  
+    width: 83%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -273,6 +287,7 @@
     .item {
       height: 82px;
       width: 600px;
+      margin: 90px 7px;
       :nth-child(1) {
         font-family: Poppins;
         font-size: 14px;
@@ -293,12 +308,21 @@
       }
     }
     .item2 {
-      height: 259px;
-      width: 1168px;
+    
+      width: 96%;
       display: flex;
       justify-content: space-between;
+      @include aval {
+       flex-wrap: wrap;
+ 
+      }
+      @include sevum {
+      justify-content: center;
+  
+       }
       .tem {
-        height: 259px;
+        margin-bottom: 100px;
+       
         width: 378.65625px;
         text-align: center;
         h2 {
@@ -330,17 +354,21 @@
 
 .contener6 {
   width: 100%;
-  height: 410px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #403e3b;
   .item {
     width: 81%;
-    height: 290px;
+  
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @include sevum {
+     flex-wrap: wrap;
+  padding-top: 55px;
+       }
     .c1 {
       height: 160px;
       width: 460px;
@@ -394,6 +422,10 @@
 }
 
 .contener8 {
+  @include aval {
+    height: auto;
+padding-top: 30px;
+   }
   width: 100%;
   height: 918px;
   background-color: #f7f7f7;
@@ -402,7 +434,12 @@
   justify-content: center;
   .item {
     width: 83%;
-    height: 698px;
+  display: flex;
+  flex-wrap: wrap;
+  @include aval {
+    justify-content: center;
+
+   }
 
     .c1 {
       width: 50%;
@@ -426,30 +463,44 @@
       }
     }
     .c2 {
+      @include aval {
+        flex-wrap: wrap;
+  justify-content: center;
+       }
       margin-top: 40px;
       display: flex;
       width: 96%;
-      flex-wrap: wrap;
+    
       img {
         margin-right: 10px;
+       width: 300px;
       }
     }
   }
 }
 
 .contener9 {
+  @include sevum {
+   
+    height: auto;
+         }
   width: 100%;
   height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   .item {
+     @include sevum {
+flex-wrap: wrap;
+height: auto;
+justify-content: center;
+     }
     width: 81%;
     height: 392px;
     display: flex;
     justify-content: space-between;
     .c1 {
-      height: 392px;
+margin-bottom: 30px;
       width: 378px;
       h1 {
         font-family: Poppins;
@@ -476,12 +527,17 @@
       }
     }
     .c2 {
-      height: 392px;
+    
       width: 773px;
       display: flex;
       flex-wrap: wrap;
-
+      @include sevum {
+       justify-content: center;
+             }
       .phot {
+        @include sevum {
+         margin: 0px;
+               }
         height: 100px;
         width: 280px;
         display: flex;
